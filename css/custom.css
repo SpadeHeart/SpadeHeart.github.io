@@ -1,7 +1,6 @@
-[class~="is-3-column"] {
-  background-image: url("https://images.freeimages.com/images/large-previews/dc0/kauno-marios-3-1379438.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+body {
+  background-image: url("https://api.btstu.cn/sjbz/?lx=dongman&format=images&method=pc");
+}
+footer.footer {
+  background-color: rgba(250,250,250,0.9);
 }
