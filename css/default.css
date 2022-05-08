@@ -1,3 +1,9 @@
+body {
+  background-image: url("https://api.btstu.cn/sjbz/?lx=dongman&format=images&method=pc");
+}
+footer.footer {
+  background-color: rgba(250,250,250,0.9);
+}
 @-moz-keyframes spinAround {
   from {
     transform: rotate(0deg);
