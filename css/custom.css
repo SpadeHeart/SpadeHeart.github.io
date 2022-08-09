@@ -4,3 +4,9 @@ body {
 footer.footer {
   background-color: rgba(250,250,250,0.9);
 }
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
